@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
   <head>
+    <!-- Google Analytics tag -->
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SVBYJVCRB2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SVBYJVCRB2');
+  </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Meta Descrpitions -->
+    <meta name="description" content="To break the poverty cycle, Parantaa coordinates efforts for youth to gain access to the support and services they need to realize their dreams.">
+    <meta name="keywords" content="non-profit, education, opportunities, Zimbabwe, Africa, youth, sports, arts, culture">
+
     <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
 
     <!--=============== REMIX ICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!--=============== PRELOAD SCRIPTS ===============-->
+    <link rel="preload" href="assets/css/styles.css" as="style"/>
+    <link rel="preload" href="/assets/js/main.js" as="script"/>
+    <link rel="preload" href="/assets/js/form-handling.js" as="script"/>
+    <link rel="preload" href="/assets/js/scrollreveal.min.js" as="script"/>
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Parantaa Africa Foundation</title>
   </head>
+
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
-          <img src="/assets/img/nav__logo.png" alt="Parantaa Africa Logo" id="logo__img">
+          <img src="/assets/img/nav__logo.png" loading="lazy" alt="Parantaa Africa Logo" id="logo__img">
         </a>
 
         <div class="nav__menu" id="nav-menu">
@@ -48,18 +64,18 @@
               <a href="#contact" class="nav__link">Contact Us</a>
             </li>
           </ul>
-          
+
           <div class="nav__social-links">
-                    <a href="https://www.facebook.com/parantaa" target="_blank" class="nav__social-link">
-                        <i class="ri-facebook-box-fill"></i>
-                    </a>
-                    <a href="https://www.instagram.com/parantaa.info/" target="_blank" class="nav__social-link">
-                        <i class="ri-instagram-fill"></i>
-                    </a>
-                    <a href="https://twitter.com/" target="_blank" class="nav__social-link">
-                        <i class="ri-twitter-fill"></i>
-                    </a>
-                </div>
+            <a href="https://www.facebook.com/parantaa" target="_blank" rel="noopener" class="nav__social-link">
+              <i class="ri-facebook-box-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/parantaa.info/" target="_blank" rel="noopener" class="nav__social-link">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener" class="nav__social-link">
+              <i class="ri-twitter-fill"></i>
+            </a>
+          </div>
 
           <div class="nav__close" id="nav-close">
             <i class="ri-close-line"></i>
@@ -79,49 +95,37 @@
       <!--==================== HOME ====================-->
       <section class="home" id="home">
         <div class="home__container container grid">
-            
-            <img src="assets/img/home.png" alt="" class="home__img">
-            
-            <div class="home__data">
-                <h1 class="home__title">
-                Endlesss opportunities <br />
-                for African youth
-                </h1>
-                <p class="home__description">
-                Breaking the poverty cycle, we coordinate efforts for the youth to gain access to the support and services that they need to realize their dreams.
-                </p>
-                <a href="#about" class="button button--flex">
-                Explore <i class="ri-arrow-right-down-line button__icon"></i>
-                </a>
-            </div>
 
-            <div class="home__social">
+          <img src="assets/img/home.png" loading="lazy" alt="Young children smiling" class="home__img">
+
+          <div class="home__data">
+            <h1 class="home__title">
+              Endlesss opportunities <br />
+              for African youth
+            </h1>
+            <p class="home__description">
+              Breaking the poverty cycle, we coordinate efforts for the youth to gain access to the support and services that they need to realize their dreams.
+            </p>
+            <a href="#about" class="button button--flex">
+              Explore <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+
+          <div class="home__social">
             <span class="home__social-follow">Follow Us</span>
 
             <div class="home__social-links">
-              <a
-                href="https://www.facebook.com/parantaa"
-                target="_blank"
-                class="home__social-link"
-              >
+              <a href="https://www.facebook.com/parantaa" target="_blank" rel="noopener" class="home__social-link">
                 <i class="ri-facebook-fill"></i>
               </a>
-              <a
-                href="https://www.instagram.com/parantaa_africa/"
-                target="_blank"
-                class="home__social-link"
-              >
+              <a href="https://www.instagram.com/parantaa_africa/" target="_blank" rel="noopener" class="home__social-link">
                 <i class="ri-instagram-line"></i>
               </a>
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                class="home__social-link"
-              >
+              <a href="https://twitter.com/" target="_blank" rel="noopener" class="home__social-link">
                 <i class="ri-twitter-fill"></i>
               </a>
             </div>
-            </div>
+          </div>
 
         </div>
 
@@ -129,15 +133,17 @@
 
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
-         
+
         <div class="section__wave">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L80,144C160,128,320,96,480,101.3C640,107,800,149,960,154.7C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1" d="M0,160L80,144C160,128,320,96,480,101.3C640,107,800,149,960,154.7C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+          </svg>
         </div>
-            
-          
+
+
         <div class="about__wrapper container">
           <div class="about__container grid">
-            <img src="assets/img/about.png" alt="Children holding hands in a circle" class="about__img" />
+            <img src="assets/img/about.png" loading="lazy" alt="Children holding hands in a circle" class="about__img" />
 
             <div class="about__data">
               <h2 class="section__title about__title">
@@ -155,7 +161,7 @@
                 </p>
                 <p class="about__details-description">
                   <i class="ri-checkbox-fill about__details-icon"></i>
-                  Enabling young people to  discover their dreams in sports, arts, and education through opportunity access.
+                  Enabling young people to discover their dreams in sports, arts, and education through opportunity access.
                 </p>
                 <p class="about__details-description">
                   <i class="ri-checkbox-fill about__details-icon"></i>
@@ -168,14 +174,14 @@
 
         </div>
 
-        <div class="partners__container">  
-          <a href="http://www.mastercardfdn.org/" target="_blank">
-              <img src="/assets/img/mcf__logo.png" alt="MasterCard Foundation Logo" id="mcf__logo">
+        <div class="partners__container">
+          <a href="http://www.mastercardfdn.org/" target="_blank" rel="noopener">
+            <img src="/assets/img/mcf__logo.png" loading="lazy" alt="MasterCard Foundation Logo" id="mcf__logo">
           </a>
-          <a href="http://www.mastercardfdn.org/" target="_blank">
-              <img src="/assets/img/wordPossible_logo.png" alt="MasterCard Foundation Logo" id="wp__logo">
+          <a href="http://www.mastercardfdn.org/" target="_blank" rel="noopener">
+            <img src="/assets/img/wordPossible_logo.png" loading="lazy" alt="Wold Possible Logo" id="wp__logo">
           </a>
-          
+
         </div>
 
       </section>
@@ -224,30 +230,30 @@
         </h2>
 
         <p class="project__description">
-          Here are some of our selected projects that we are implementing at the moment. 
+          Here are some of our selected projects that we are implementing at the moment.
         </p>
 
         <article class="project__card">
           <div class="project__card-left">
             <div class="project__circle"></div>
-            <img src="assets/img/project1.png" alt="" class="project__img"/>
+            <img src="assets/img/project1.png" loading="lazy" alt="Rachel Device" class="project__img" />
           </div>
-            
+
           <div class="project__card-right">
             <h3 class="project__title">RACHEL DEVICES&trade; Access</h3>
             <div class="project__subtitle">
               <span>Information Access</span>
               <span>&nbsp;&vert;</span>
-              <a href="https://worldpossible.org/" target="blank">World Possible</a>
+              <a href="https://worldpossible.org/" target="blank" rel="noopener">World Possible</a>
               <span>&nbsp;&vert;</span>
               <span>
                 <i class="ri-map-pin-fill"></i>
                 Chitungwiza</span>
-              </div>
-      
+            </div>
+
             <p class="project__data">
-              Parantaa has channeled funding into acquiring <a href="" target="_blank">RACHEL DEVICES&trade;</a> from World Possible. These devices can wirelessly transmit free digital instructional content to nearby tablets, computers, or smartphones without the need for an internet connection or data plan. They will allow at least 50 students at a time to access pre-loaded copies of leading educational websites including Khan Academy, Scratch, TED and other customizable content.
-              
+              Parantaa has channeled funding into acquiring <a href="https://worldpossible.org/" target="_blank" rel="noopener">RACHEL DEVICES&trade;</a> from World Possible. These devices can wirelessly transmit free digital instructional content to nearby tablets, computers, or smartphones without the need for an internet connection or data plan. They will allow at least 50 students at a time to access pre-loaded copies of leading educational websites including Khan Academy, Scratch, TED and other customizable content.
+
               <br> <br>
               <strong>For the 26% of Zimbabwe's primary school students and 43% of high school students without access to the internet, RACHEL devices provide fast, free access to quality educational content.</strong>
               With these portable, plug-and-play server we hope to connect underserved youth to a world of educational content with a single click. We have also availed several laptops for this purpose too, partnering with local organizations for the supervision of their use.
@@ -260,7 +266,9 @@
       <!--==================== OUR TEAM + FAQ ====================-->
       <section class="questions section" id="team">
         <div class="section__wave">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L80,144C160,128,320,96,480,101.3C640,107,800,149,960,154.7C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1" d="M0,160L80,144C160,128,320,96,480,101.3C640,107,800,149,960,154.7C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+          </svg>
         </div>
 
         <h2 class="section__title-center questions__title container">
@@ -269,7 +277,7 @@
 
         <div class="container team__container grid">
           <div class="team__info">
-            <img src="/assets/img/rufaro__nyoni.jpg" alt="" class="team__img">
+            <img src="/assets/img/rufaro__nyoni.jpg" loading="lazy" alt="Rufaro Nyoni" class="team__img">
             <div class="team__wrapper">
               <h3 class="team__name">Rufaro Nyoni</h3>
               <p class="team__role">Founder</p>
@@ -278,7 +286,7 @@
           </div>
 
           <div class="team__info grid">
-            <img src="/assets/img/shyline__bajaba.JPG" alt="" class="team__img">
+            <img src="/assets/img/shyline__bajaba.JPG" loading="lazy" alt="Shyline Bajaba" class="team__img">
             <div class="team__wrapper">
               <h3 class="team__name">Shyline Bajaba</h3>
               <p class="team__role">Trustee</p>
@@ -288,16 +296,16 @@
           </div>
 
           <div class="team__info grid">
-            <img src="/assets/img/charmaine__nyakonda.jpg" alt="" class="team__img">
+            <img src="/assets/img/charmaine__nyakonda.jpg" loading="lazy" alt="Charmaine Nyakonda" class="team__img">
             <div class="team__wrapper">
               <h3 class="team__name">Charmaine Natasha Nyakonda</h3>
               <p class="team__role">Trustee</p>
-              <p class="team__description">Charmaine is a multiskilled neuroscientist with extensive experience in experience stewardship, stakeholder engagement and partner relationship management.  She has been heavily involved in youth-based programming, community-engaged learning and asset-based community development, mental health education and activism. Charmaine also has an extensive background in curriculum design and piloting high schools for high achieving low-income students. Charmaine is currently an MSc in Paediatrics Neuroimaging Candidate at the Neuroscience Institute at the University of Cape Town, South Africa. She holds an Honors BSc in Neuroscience and Health studies from the University of Toronto, Canada, a Post Graduate Certificate in Stem Cell and Translational Neurology from the University of Edinburgh, Scotland. Charmaine also holds a SafeTalk Suicide Prevention certificate from Living Works and safeguarding certifications which guide her mental health education and activism work.</p>
+              <p class="team__description">Charmaine is a multiskilled neuroscientist with extensive experience in experience stewardship, stakeholder engagement and partner relationship management. She has been heavily involved in youth-based programming, community-engaged learning and asset-based community development, mental health education and activism. Charmaine also has an extensive background in curriculum design and piloting high schools for high achieving low-income students. Charmaine is currently an MSc in Paediatrics Neuroimaging Candidate at the Neuroscience Institute at the University of Cape Town, South Africa. She holds an Honors BSc in Neuroscience and Health studies from the University of Toronto, Canada, a Post Graduate Certificate in Stem Cell and Translational Neurology from the University of Edinburgh, Scotland. Charmaine also holds a SafeTalk Suicide Prevention certificate from Living Works and safeguarding certifications which guide her mental health education and activism work.</p>
             </div>
           </div>
         </div>
 
-        
+
 
         <h2 class="section__title-center questions__title container">
           Some questions we're <br />
@@ -331,7 +339,7 @@
 
               <div class="questions__content">
                 <p class="questions__description">
-                  Thanks for your interest in supporting Parantaa! We welcome partnerships, interns, volunteers, and we also accept donations. If you'd like to get in touch with us about any of these options, please email us at <a href="#" target="_blank">parantaa@email.com.</a> 
+                  Thanks for your interest in supporting Parantaa! We welcome partnerships, interns, volunteers, and we also accept donations. If you'd like to get in touch with us about any of these options, please email us at <a href="mailto:@parantaafricafoundation.org">@parantaafricafoundation.org</a>
                 </p>
               </div>
             </div>
@@ -379,7 +387,7 @@
             <div class="contact__data grid">
               <div class="contact__information">
                 <h3 class="contact__subtitle">Call us for instant inquiries</h3>
-                <a href="tel:+263 888777 9990" class="contact__description">
+                <a href="tel:+2638887779990" class="contact__description">
                   <i class="ri-phone-line contact__icon"></i>
                   (+263) 888 777 9990
                 </a>
@@ -395,24 +403,20 @@
             </div>
           </div>
 
-          <form action="https://formsubmit.co/parantaa@email.com" target="_blank" class="contact__form" method="post">
+          <form action="https://formsubmit.co/@parantaafricafoundation.org" target="_blank" rel="noopener" class="contact__form" method="post">
             <div class="contact__inputs">
               <div class="contact__content">
-                <input name="email" type="email" placeholder=" " class="contact__input" required/>
-                <label for="" class="contact__label">Email</label>
+                <input name="email" id="email" type="email" placeholder=" " class="contact__input" required />
+                <label for="email" class="contact__label">Email</label>
               </div>
 
               <div class="contact__content">
-                <input name="_subject" type="text" placeholder=" " class="contact__input" />
-                <label for="" class="contact__label">Subject</label>
+                <input name="_subject" id="subject" type="text" placeholder=" " class="contact__input" />
+                <label for="subject" class="contact__label">Subject</label>
               </div>
 
               <div class="contact__content contact__area">
-                <textarea
-                  name="message"
-                  placeholder="Message"
-                  class="contact__input"
-                ></textarea>
+                <textarea name="message" placeholder="Message" class="contact__input"></textarea>
               </div>
             </div>
 
@@ -426,23 +430,19 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer section" style="padding-top: 6rem;">
-      <div class="footer__container container grid" style="margin-bottom: -2rem;">
+    <footer class="footer section">
+      <div class="footer__container container grid">
         <div class="footer__content">
           <a href="#" class="footer__logo">
-            <img src="/assets/img/logo__img.png" alt="Parantaa Footer Logo" class="footer__logo-img">Parantaa
+            <img src="/assets/img/logo__img.png" loading="lazy" alt="Parantaa Footer Logo" class="footer__logo-img">Parantaa
           </a>
 
           <h3 class="subscribe__title">
             Subscribe to our newsletter
           </h3>
 
-          <form action="" class="footer__subscribe" id="subscription__form">
-            <input id="email" name="email" 
-              type="email"
-              placeholder="Enter your email"
-              class="footer__input"
-            />
+          <form action="https://formsubmit.co/@parantaafricafoundation.org" class="footer__subscribe" id="subscription__form">
+            <input id="email" name="email" type="email" placeholder="Enter your email" class="footer__input" />
 
             <button class="button button--flex footer__button" id="subscription__button" type="submit" value="Submit">
               Subscribe
@@ -472,17 +472,17 @@
           <ul class="footer__data">
             <li class="footer__information">+(263) 888 777 999</li>
 
-            <div class="footer__social">
-              <a href="https://www.facebook.com/parantaa" class="footer__social-link" target="_blank">
+            <li class="footer__social">
+              <a href="https://www.facebook.com/parantaa" class="footer__social-link" target="_blank" rel="noopener">
                 <i class="ri-facebook-fill"></i>
               </a>
-              <a href="https://www.instagram.com/parantaa_africa/" class="footer__social-link" target="_blank">
+              <a href="https://www.instagram.com/parantaa_africa/" class="footer__social-link" target="_blank" rel="noopener">
                 <i class="ri-instagram-line"></i>
               </a>
-              <a href="https://twitter.com/" class="footer__social-link" target="_blank">
+              <a href="https://twitter.com/" class="footer__social-link" target="_blank" rel="noopener">
                 <i class="ri-twitter-fill"></i>
               </a>
-            </div>
+            </li>
           </ul>
         </div>
 
@@ -490,9 +490,9 @@
           <h3 class="footer__title">Donate to:</h3>
 
           <div class="footer__cards">
-            <img src="assets/img/card1.png" alt="" class="footer__card" />
-            <img src="assets/img/card2.png" alt="" class="footer__card" />
-            <img src="assets/img/card3.png" alt="" class="footer__card" />
+            <img src="assets/img/card1.png" loading="lazy" alt="Visa Card" class="footer__card" />
+            <img src="assets/img/card2.png" loading="lazy" alt="MasterCard Card" class="footer__card" />
+            <img src="assets/img/card3.png" loading="lazy" alt="PayPal Card" class="footer__card" />
           </div>
         </div>
       </div>
@@ -506,12 +506,13 @@
     </a>
 
     <!--=============== SCROLL REVEAL JS ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/scrollreveal.min.js" defer></script>
 
     <!--=============== FORM HANDLING JS ===============-->
-    <script src="/assets/js/form-handling.js"></script>
+    <script src="/assets/js/form-handling.js" defer></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
   </body>
+
 </html>
