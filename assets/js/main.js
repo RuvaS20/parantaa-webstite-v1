@@ -107,9 +107,12 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__img`, {delay: 500})
 sr.reveal(`.home__social`, {delay: 600})
-sr.reveal(`.about__img, .project__img, .project__circle, .contact__box`, {
-  origin: "left",
-});
-sr.reveal(`.about__data, .contact__form`, { origin: 'right' })
+sr.reveal(
+  `.about__img, .project__img, .project__circle, .contact__box, .team__img`,
+  {
+    origin: "left",
+  }
+);
+sr.reveal(`.about__data, .contact__form, .team__wrapper`, { origin: "right" });
 sr.reveal(`#mcf__logo, #wp__logo`, { origin: "bottom" });
 sr.reveal(`.pillars__card, .project__card, .questions__group, .footer`,{interval: 100})
